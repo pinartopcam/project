@@ -1,4 +1,4 @@
-import Preference, Instructor, Course
+import Preference as p , Instructor, Course
 class TeachingAssistant:
     def __init__(self, id, name, advisor, department):
         self.id = id
@@ -8,5 +8,5 @@ class TeachingAssistant:
         self.preferences = []
 
     def createPreference(self, id, course_id, ta_id, rank):
-        p = Preference(id, None, course_id, rank)
-        self.preferences.append(p)
+        pref = p.Preference(None, id, course_id, rank)
+        self.preferences.append(pref)
